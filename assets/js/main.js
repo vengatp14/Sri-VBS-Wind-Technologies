@@ -165,6 +165,69 @@
 
 
 
+    // Add your images here
+    const images = [
+        "assets/img/1.jpg",
+        "assets/img/2.jpg",
+        "assets/img/3.jpg"
+
+    ];
+
+    let index = 0;
+    const heroImage = document.getElementById("heroImage");
+
+    setInterval(() => {
+        index = (index + 1) % images.length;
+        heroImage.src = images[index];
+    }, 2000); // 3000 = 3 seconds
+
+
+
+        // Add your images here
+    const images_1 = [
+        "assets/img/1.jpg",
+        "assets/img/2.jpg",
+        "assets/img/3.jpg"
+
+    ];
+
+    let index_1 = 0;
+    const heroImage_1 = document.getElementById("heroImage_1");
+
+    setInterval(() => {
+        index_1 = (index_1 + 1) % images_1.length;
+        heroImage_1.src = images_1[index_1];
+    }, 2000); // 3000 = 3 seconds
+
+
+
+
+const btn = document.getElementById("socialBtn");
+const modal = document.getElementById("socialModal");
+const closeBtn = document.getElementById("closeModal");
+
+// Toggle modal open
+btn.addEventListener("click", () => {
+    modal.style.display = "flex";
+    btn.classList.add("active");
+});
+
+// Close modal
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+    btn.classList.remove("active");
+});
+
+// Close when clicking outside the box
+window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.style.display = "none";
+        btn.classList.remove("active");
+    }
+});
+
+
+
   /**
    * Navmenu Scrollspy
    */
