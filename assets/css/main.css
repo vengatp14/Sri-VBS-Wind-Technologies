@@ -469,6 +469,8 @@ h6 {
   background-color: var(--background-color);
   font-size: 14px;
   position: relative;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footer .footer-top {
@@ -664,7 +666,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 30px 0;
   scroll-margin-top: 82px;
   overflow: clip;
 }
@@ -3727,3 +3729,291 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         padding: 6px 4px;
     }
 }
+
+   .social-btn {
+        font-size: 13px;
+        padding: 6px 4px;
+    }
+.text-css{
+  color: #ff5000 !important;
+}
+
+ /* Scoped styles for this section */
+    #productSection .card {
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    #productSection .card:hover {
+      box-shadow: 0 0 20px #f85d23;
+    }
+
+    #productSection .product-card {
+      margin-bottom: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    #productSection .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #f85d23;
+    }
+
+    #productSection .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    #productSection .product-card img:hover {
+      transform: scale(1.05);
+    }
+
+    #productSection .whatsapp-btn {
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 10px;
+      background: #25d366;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 8px rgba(0,255,0,0.5);
+      transition: 0.3s;
+    }
+
+    #productSection .whatsapp-btn:hover {
+      background: #1ebe57;
+    }
+
+    #productSection .pagination .page-link {
+      border-radius: 50% !important;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 3px;
+      transition: 0.3s;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    #productSection .pagination .page-item.active .page-link {
+      background-color: #f85d23;
+      color: #fff;
+      box-shadow: 0 0 10px #f85d23;
+    }
+
+    #productSection .pagination .page-link:hover {
+      background-color: #f85d23;
+      color: #fff;
+      box-shadow: 0 0 10px #f85d23;
+    }
+
+
+
+    /* ─────────────────────────────── */
+/*   OPTIMIZED CSS – THIS SECTION  */
+/* ─────────────────────────────── */
+
+#nav-tab-section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAV */
+.tab-nav {
+  display: flex;
+ justify-content: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+.tab-btn {
+  padding: 10px 22px;
+  border: none;
+  background: #e4e4e4;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.tab-btn.active {
+  background: #ffa600;
+  color: #fff;
+  animation: tabPulse 1.3s infinite;
+}
+@keyframes tabPulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 174, 0, 0.5); }
+  100% { box-shadow: 0 0 0 18px rgba(255, 174, 0, 0); }
+}
+
+/* CONTENT */
+.tab-content {
+  display: none;
+  animation: fadeSlide 0.45s ease;
+}
+.tab-content.active {
+  display: block;
+}
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ROW LAYOUT */
+.content-row {
+  display: flex;
+  gap: 25px;
+}
+
+/* LEFT IMAGE */
+.main-img-box {
+  width: 55%;
+  height: 360px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 3px solid #ffa60040;
+}
+.main-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.main-img-box:hover img {
+  transform: scale(1.07);
+}
+
+/* RIGHT LIST */
+.item-list {
+  width: 45%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.item-list li {
+  padding: 12px 18px;
+  background: #f4f4f4;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  border: 2px solid transparent;
+  transition: 0.25s;
+}
+.item-list li:hover {
+  border-color: #ffa60080;
+  transform: scale(1.02);
+}
+.item-list li.active {
+  border-color: #ff8800;
+  box-shadow: 0 0 12px #ff7b0090;
+}
+
+/* MOBILE */
+@media(max-width: 768px){
+  .content-row { flex-direction: column; }
+  .main-img-box { width: 100%; height: 250px; }
+  .item-list { width: 100%; }
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #ff5000;
+    --bs-btn-border-color: #ff5000;}
+
+    .btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #ff5000;
+    border-color: #ff5000;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+    font-size: var(--bs-pagination-font-size);
+    color: #ff5000;
+    text-decoration: none;
+    background-color: var(--bs-pagination-bg);
+    border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+    transition: color .15s 
+ease-in-out, background-color .15s 
+ease-in-out, border-color .15s 
+ease-in-out, box-shadow .15s 
+ease-in-out;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-bottom: 60px; /* adjust value as needed */
+  }
+}
+
+
+  .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+      border-radius: 10px;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    .gallery-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(45deg, rgba(255,140,0,0.3), rgba(255,69,0,0.3));
+      opacity: 0;
+      transition: opacity 0.4s;
+      border-radius: 10px;
+    }
+
+    .gallery-item:hover::after {
+      opacity: 1;
+    }
+
+    .pagination .page-link {
+      background-color: #ff8c00;
+      border-color: #ff8c00;
+      color: #fff;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .pagination .page-link:hover {
+      background-color: #ff4500;
+      transform: scale(1.1);
+      color: #fff;
+    }
+
+    /* Loop animation for gallery items */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .gallery-item {
+      animation: float 4s ease-in-out infinite;
+    }

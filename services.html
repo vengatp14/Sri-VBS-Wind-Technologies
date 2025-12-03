@@ -46,7 +46,7 @@
         <ul>
           <li><a href="index.html" >Home</a></li>
           <li><a href="about_us.html">About</a></li>
-           <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+           <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="service-details.html">Services sample page</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -58,13 +58,13 @@
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
               </li>
-              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="services.html">Services</a></li>
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="#services">Solar</a></li>
-          <li><a href="#services">Gallery</a></li>
+         <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="job.html">Careers</a></li>
         
@@ -97,127 +97,69 @@
     <section id="starter-section" class="starter-section section">
 
     
-<!-- ============================ JOB APPLICATION FORM SECTION ============================ -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-md-10">
+<section id="nav-tab-section">
 
-                <div class="card p-4 shadow-lg rounded-4">
-                    <h2 class="text-center mb-4 fw-bold">
-                        Job Application Form
-                    </h2>
+  <!-- NAVIGATION -->
+  <div class="tab-nav ">
+    <button class="tab-btn active" data-tab="tab1">Home</button>
+    <button class="tab-btn" data-tab="tab2">Services</button>
+    <button class="tab-btn" data-tab="tab3">Products</button>
+  </div>
 
-                    <form class="needs-validation" id="jobForm" novalidate>
+  <!-- TAB 1 -->
+  <div class="tab-content active" id="tab1">
+    <div class="content-row">
 
-                        <!-- Full Name -->
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Full Name</label>
-                            <input type="text" class="form-control" placeholder="Enter your full name" required>
-                            <div class="invalid-feedback">Please enter your full name.</div>
-                        </div>
+      <!-- LEFT IMAGE -->
+      <div class="main-img-box">
+        <img id="tab1-main-img" src="https://images.unsplash.com/photo-1503264116251-35a269479413?w=900">
+      </div>
 
-                        <!-- Email -->
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Email Address</label>
-                            <input type="email" class="form-control" placeholder="example@gmail.com" required>
-                            <div class="invalid-feedback">Please enter a valid email address.</div>
-                        </div>
+      <!-- RIGHT LIST -->
+      <ul class="item-list">
+        <li class="active" data-img="https://images.unsplash.com/photo-1503264116251-35a269479413?w=900">🏠 Home Interior</li>
+        <li data-img="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=900">🌇 City View</li>
+        <li data-img="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900">🌄 Landscape</li>
+      </ul>
 
-                        <!-- Phone -->
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="10-digit mobile number" maxlength="10" pattern="[0-9]{10}" required>
-                            <div class="invalid-feedback">Enter a valid 10-digit phone number.</div>
-                        </div>
-
-                        <!-- Date of Birth -->
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Date of Birth</label>
-                            <input type="date" class="form-control" required>
-                            <div class="invalid-feedback">Date of Birth is required.</div>
-                        </div>
-
-                        <!-- Position Applying -->
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Position Applying For</label>
-                            <select class="form-select" required>
-                                <option value="">Select Job Role</option>
-                                <option>Wind Turbine Technician</option>
-                                <option>Solar Panel Installer</option>
-                                <option>Electrical Engineer</option>
-                                <option>Site Supervisor</option>
-                                <option>Logistics Coordinator</option>
-                                <option>Component Repair Technician</option>
-                            </select>
-                            <div class="invalid-feedback">Please select a job position.</div>
-                        </div>
-
-                        <!-- Experience -->
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Total Years of Experience</label>
-                            <input type="number" class="form-control" min="0" max="50" placeholder="e.g., 2" required>
-                            <div class="invalid-feedback">Enter your work experience in years.</div>
-                        </div>
-
-                        <!-- Qualification -->
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Highest Qualification</label>
-                            <input type="text" class="form-control" placeholder="Enter qualification (e.g., Diploma, BE EEE)" required>
-                            <div class="invalid-feedback">This field is required.</div>
-                        </div>
-
-                        <!-- Resume Upload -->
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Upload Resume (PDF only)</label>
-                            <input type="file" class="form-control" accept=".pdf" required>
-                            <div class="invalid-feedback">Please upload your resume in PDF format.</div>
-                        </div>
-
-                        <!-- Address -->
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Complete Address</label>
-                            <textarea class="form-control" rows="3" placeholder="Enter your address" required></textarea>
-                            <div class="invalid-feedback">Address is required.</div>
-                        </div>
-
-                        <!-- Message / Notes -->
-                        <div class="mb-3">
-                            <label class="form-label fw-semibold">Additional Notes</label>
-                            <textarea class="form-control" rows="3" placeholder="Any message (optional)"></textarea>
-                        </div>
-
-                        <!-- Submit Button -->
-                        <button type="submit" class="btn btn-primary w-100 py-2 fs-5">
-                            Submit Application
-                        </button>
-
-                    </form>
-
-                </div>
-            </div>
-        </div>
     </div>
+  </div>
+
+  <!-- TAB 2 -->
+  <div class="tab-content" id="tab2">
+    <div class="content-row">
+
+      <div class="main-img-box">
+        <img id="tab2-main-img" src="https://images.unsplash.com/photo-1483794344563-d27a8d18014e?w=900">
+      </div>
+
+      <ul class="item-list">
+        <li class="active" data-img="https://images.unsplash.com/photo-1483794344563-d27a8d18014e?w=900">🛠️ Web Development</li>
+        <li data-img="https://images.unsplash.com/photo-1551434678-e076c223a692?w=900">📱 Mobile App</li>
+        <li data-img="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=900">🎨 UI/UX Design</li>
+      </ul>
+
+    </div>
+  </div>
+
+  <!-- TAB 3 -->
+  <div class="tab-content" id="tab3">
+    <div class="content-row">
+
+      <div class="main-img-box">
+        <img id="tab3-main-img" src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=900">
+      </div>
+
+      <ul class="item-list">
+        <li class="active" data-img="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=900">💻 Laptop</li>
+        <li data-img="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=900">🖥️ Desktop</li>
+        <li data-img="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900">⌨️ Accessories</li>
+      </ul>
+
+    </div>
+  </div>
+
 </section>
-<!-- ============================ END JOB APPLICATION FORM SECTION ============================ -->
-
-<!-- Bootstrap Validation Script -->
-<script>
-    (() => {
-        'use strict';
-        const forms = document.querySelectorAll('.needs-validation');
-
-        Array.from(forms).forEach(form => {
-            form.addEventListener('submit', event => {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-            }, false);
-        });
-    })();
-</script>
 
 
 
@@ -358,7 +300,7 @@
   </a>
 </nav>
 
-<section>
+<section class="m-0 p-0">
   <!-- 📌 Floating Action Buttons (Right Side) -->
 <div class="fab-container active">  <!-- Add 'active' to show buttons -->
     
@@ -526,6 +468,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/services.js"></script>
 
 </body>
 

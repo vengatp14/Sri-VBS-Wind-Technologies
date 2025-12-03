@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Starter Page - Sri VBS Wind Technologies Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+<title>Careers & Jobs - Sri VBS Wind Technologies | Wind & Solar Energy Jobs in Tamil Nadu</title>
+
+<meta name="description" content="Apply for jobs at Sri VBS Wind Technologies. We are hiring wind turbine technicians, solar panel installers, electrical engineers, site supervisors, logistics staff, and renewable energy professionals. Join a leading renewable energy company in Tamil Nadu.">
+
+<meta name="keywords" content="Sri VBS Wind Technologies jobs, wind turbine jobs Tamil Nadu, solar energy jobs, renewable energy careers India, wind technician vacancy, solar installer vacancy, electrical engineer jobs, Udumalpet wind energy jobs, field technician careers, power plant jobs, green energy recruitment">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -31,7 +33,7 @@
 
 <body class="starter-page-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+ <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
@@ -42,13 +44,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about_us.html">About</a></li>
+           <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
+              <li><a href="service-details.html">Services sample page</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
@@ -58,12 +58,17 @@
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
               </li>
-              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="services.html">Services</a></li>
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="#contact">Contact</a></li>
+         <li><a href="products.html">Products</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="job.html">Careers</a></li>
+        
+          <li><a href="contact_us.html">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -78,11 +83,11 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Starter Page</h1>
+    
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
+            <li class="current">Products</li>
           </ol>
         </nav>
       </div>
@@ -91,104 +96,163 @@
     <!-- Starter Section Section -->
     <section id="starter-section" class="starter-section section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+    
+<!-- PRODUCT SECTION START -->
+<section id="productSection" class="py-5">
+  <div class="container">
+    <div class="row">
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+      <!-- Sidebar -->
+      <div class="col-md-3 mb-4">
+        <div class="card shadow-sm p-3">
+          <h5 class="text-center mb-3 text-css">Categories</h5>
+          <div class="form-check">
+            <input class="form-check-input catFilter" type="checkbox" value="electronics" id="cat1">
+            <label class="form-check-label" for="cat1">Electronics</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input catFilter" type="checkbox" value="fashion" id="cat2">
+            <label class="form-check-label" for="cat2">Fashion</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input catFilter" type="checkbox" value="home" id="cat3">
+            <label class="form-check-label" for="cat3">Home Items</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input catFilter" type="checkbox" value="beauty" id="cat4">
+            <label class="form-check-label" for="cat4">Beauty</label>
+          </div>
+        </div>
       </div>
+
+      <!-- Products -->
+      <div class="col-md-9">
+        <input type="text" id="searchInput" class="form-control mb-4 shadow-sm" placeholder="Search products...">
+
+        <div class="row" id="productGrid"></div>
+
+        <p id="noResults" class="text-center text-danger mt-3" style="display:none;">
+          ❌ I cannot find this product — please contact admin.
+        </p>
+
+        <nav aria-label="Page navigation" class="mt-4">
+          <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script>
+  
+  </script>
+</section>
+<!-- PRODUCT SECTION END -->
+
+
 
     </section><!-- /Starter Section Section -->
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+<footer id="footer" class="footer position-relative light-background">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Sri VBS Wind Technologies</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
+  <div class="container footer-top">
+    <div class="row gy-4">
+
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">Sri VBS Wind Technologies</span>
+        </a>
+
+        <div class="footer-contact pt-3">
+          <p>3/445-H-6, Siva Nagarajan Nagar</p>
+          <p>Near RKR School, Tiruppur Road, Udumalpet</p>
+          <p>Tiruppur District – 642126</p>
+
+          <p class="mt-3"><strong>CEO Phone:</strong> <span>9361233391</span></p>
+          <p><strong>Office:</strong> <span>8300701391</span></p>
+          <p><strong>Email:</strong> <span>timontcpharma@gmail.com</span></p>
+          <p><strong>GST:</strong> <span>33BVPPS5975P1ZC</span></p>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
+        <div class="social-links d-flex mt-4">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div>
-
       </div>
-    </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">MyWebsite</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <!-- Useful Links -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
       </div>
+
+      <!-- Our Services -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Wind Turbine Maintenance</a></li>
+          <li><a href="#">Solar Panel Installation</a></li>
+          <li><a href="#">Component Repair & Supply</a></li>
+          <li><a href="#">Site Infrastructure & Logistics</a></li>
+          <li><a href="#">Training & Consulting</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Access 1 -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Energy Solutions</h4>
+        <ul>
+          <li><a href="#">Rooftop Solar Systems</a></li>
+          <li><a href="#">Water Pump Electrification</a></li>
+          <li><a href="#">Industrial Power Plant Support</a></li>
+          <li><a href="#">Street Light Installations</a></li>
+          <li><a href="#">Electrical Safety Checks</a></li>
+        </ul>
+      </div>
+
+      <!-- Quick Access 2 -->
+      <div class="col-lg-2 col-md-3 footer-links">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">24/7 Breakdown Service</a></li>
+          <li><a href="#">Maintenance Contracts</a></li>
+          <li><a href="#">Technical Assistance</a></li>
+          <li><a href="#">Component Availability</a></li>
+          <li><a href="#">Installation Guidance</a></li>
+        </ul>
+      </div>
+
     </div>
+  </div>
 
-  </footer>
+  <!-- Copyright Area -->
+  <div class="container copyright text-center mt-4">
+    <p>
+      © <span>Copyright</span> 
+      <strong class="px-1 sitename">Sri VBS Wind Technologies</strong> 
+      <span>All Rights Reserved</span>
+    </p>
+    <div class="credits">
+      Designed by <a href="https://softwaredevelopmentandgraphicdesign.tech/">SDGD</a>
+    </div>
+  </div>
 
+</footer>
 
-  <!-- Mobile Bottom Navigation -->
+<!-- Mobile Bottom Navigation -->
 <nav class="mobile-bottom-nav d-md-none">
   <a href="index.html" class="nav-item active" >
     <i class="bi bi-house-fill"></i>
@@ -220,15 +284,13 @@
     <span>Blog</span>
   </a>
 
-
-
   <a href="contact_us.html" class="nav-item" >
     <i class="bi bi-telephone-fill"></i>
     <span>Contact</span>
   </a>
 </nav>
 
-<section>
+<section class="m-0 p-0">
   <!-- 📌 Floating Action Buttons (Right Side) -->
 <div class="fab-container active">  <!-- Add 'active' to show buttons -->
     
@@ -396,6 +458,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/products.js"></script>
 
 </body>
 
